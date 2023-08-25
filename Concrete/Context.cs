@@ -13,7 +13,7 @@ namespace DataAccessLayer.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optiosBuilder)
         {
-            optiosBuilder.UseSqlServer("server=DESKTOP-LAUG52V\\SQLEXPRESS02; database=TraversalDB; integrated security=true; ");
+            optiosBuilder.UseSqlServer("server=DESKTOP-4H6A2KM\\SQLEXPRESS; database=TraversalDB; integrated security=true; ");
         }
 
         public DbSet<About> Abouts { get; set; }
@@ -27,6 +27,8 @@ namespace DataAccessLayer.Concrete
         public DbSet<SubAbout> SubAbouts { get; set; }
         public DbSet<Testimonial> Testimonials { get; set; }
         public DbSet<Comment> Comments { get; set; }
+       public DbSet<Reservation> Reservations { get; set; }
+
 
     }
 }
